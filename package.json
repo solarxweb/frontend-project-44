@@ -4,12 +4,15 @@
   "description": "[![Actions Status](https://github.com/solarxweb/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/solarxweb/frontend-project-44/actions)",
   "main": "index.js",
   "bin": {
-    "brain-games" : "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daniil Romanenko",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "make": "^0.8.1"
+  }
 }
