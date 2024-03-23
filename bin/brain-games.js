@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import { getNameGreetings } from "../src/cli.js";
+/* eslint-disable import/extensions */
+
+import getNameGreetings from '../src/cli.js';
 
 getNameGreetings();
