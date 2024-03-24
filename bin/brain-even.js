@@ -1,12 +1,6 @@
 #!/usr/bin/env node
-/* eslint-disable no-console */
+/* eslint-disable import/extensions */
 
-import readlineSync from 'readline-sync';
-import getNameGreetings from '../src/cli.js';
+import { getEvenNumber } from '../src/cli.js';
 
-const getEvenNumber = () => {
-  getNameGreetings();
-  console.log('Answer "yes if the number is even, otherwise answer "no"');
-  readlineSync.question('Question: ');
-};
-
+getEvenNumber();
