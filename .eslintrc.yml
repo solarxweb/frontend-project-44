@@ -6,6 +6,6 @@ parserOptions:
   ecmaVersion: latest
   sourceType: module
 rules: {
-  eslint-disable no-console: 0,
-  eslint-disable import/extensions: 0
+  no-console: 0,
+  import/extensions: 0
 }
