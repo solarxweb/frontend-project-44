@@ -12,7 +12,7 @@ export const getEvenNumber = () => {
   const collOfNums = [15, 6, 7];
   console.log('Welcome to Brain Games!');
   const getName = readlineSync.question('May I have your name? ');
-  console.log('Answer "yes if the number is even, otherwise answer "no"');
+  console.log('Answer "yes" if the number is even, otherwise answer "no"');
   for (let i = 0; i < collOfNums.length; i += 1) {
     console.log(`Question: ${collOfNums[i]}`);
     const answer = readlineSync.question('Your answer: ');
