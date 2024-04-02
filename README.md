@@ -6,3 +6,6 @@
 
 #### ASCIINEMA / Brain-even lesson 
 [![asciicast](https://asciinema.org/a/v8zavtHurqhAdbvr8Ljxneoa7.svg)](https://asciinema.org/a/v8zavtHurqhAdbvr8Ljxneoa7)
+
+#### ACIINEMA / Brain-calc lesson
+[![asciicast](https://asciinema.org/a/WG99d7EdCK4dXjVCrS6gTJ4l6.svg)](https://asciinema.org/a/WG99d7EdCK4dXjVCrS6gTJ4l6)
