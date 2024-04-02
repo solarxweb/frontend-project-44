@@ -8,11 +8,11 @@ export const getNameGreetings = () => {
 };
 
 export const getInt = () => {
-  const x = Math.floor(Math.random() * 25);
-  return x;
+  const randomNumber = Math.floor(Math.random() * 25);
+  return randomNumber;
 };
 export const getOperator = () => {
   const arr = ['+', '-', '*'];
-  const x = Math.floor(Math.random() * arr.length);
-  return arr[x];
+  const randomSymb = Math.floor(Math.random() * arr.length);
+  return arr[randomSymb];
 };
