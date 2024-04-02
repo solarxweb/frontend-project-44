@@ -18,7 +18,7 @@ const brainCalc = () => {
         console.log(`'${answer}'  is wrong answer ;(. Correct answer was '${res}'.\nLet's try again, ${theName}!`);
       } if (operator === '-') {
         res = num1 - num2;
-        console.log(`'${answer}'  is wrong answer ;(. Correct answer was '${res}.'\nLet's try again, ${theName}!`);
+        console.log(`'${answer}'  is wrong answer ;(. Correct answer was '${res}'.\nLet's try again, ${theName}!`);
       } if (operator === '*') {
         res = num1 * num2;
         console.log(`'${answer}'  is wrong answer ;(. Correct answer was '${res}'.\nLet's try again, ${theName}!`);
