@@ -9,7 +9,7 @@ const brainCalc = () => {
     const operator = getOperator();
     console.log(`Question: ${num1} ${operator} ${num2}`);
     const answer = readlineSync.question('Your answer: ');
-    if ((operator === '+' && Number(answer0) === num1 + num2) || (operator === '-' && Number(answer) === num1 - num2) || (operator === '*' && Number(answer) === num1 * num2)) {
+    if ((operator === '+' && Number(answer) === num1 + num2) || (operator === '-' && Number(answer) === num1 - num2) || (operator === '*' && Number(answer) === num1 * num2)) {
       console.log('Correct!');
     } else {
       let res;
