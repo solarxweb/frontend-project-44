@@ -9,23 +9,19 @@ const brainCalc = () => {
     const operator = getOperator();
     console.log(`Question: ${num1} ${operator} ${num2}`);
     const answer = readlineSync.question('Your answer: ');
-    if (operator === '+' && Number(answer) === num1 + num2) {
-      console.log('Correct!');
-    } else if (operator === '-' && Number(answer) === num1 - num2) {
-      console.log('Correct!');
-    } else if (operator === '*' && Number(answer) === num1 * num2) {
+    if ((operator === '+' && Number(answer0) === num1 + num2) || (operator === '-' && Number(answer) === num1 - num2) || (operator === '*' && Number(answer) === num1 * num2)) {
       console.log('Correct!');
     } else {
       let res;
       if (operator === '+') {
         res = num1 + num2;
-        console.log(`'${answer}'  is wrong answer ;(. Correct answer was ${res}`);
+        console.log(`'${answer}'  is wrong answer ;(. Correct answer was ${res}\nLet's try again, ${theName}`);
       } if (operator === '-') {
         res = num1 - num2;
-        console.log(`'${answer}'  is wrong answer ;(. Correct answer was ${res}`);
+        console.log(`'${answer}'  is wrong answer ;(. Correct answer was ${res}\nLet's try again, ${theName}`);
       } if (operator === '*') {
         res = num1 * num2;
-        console.log(`'${answer}'  is wrong answer ;(. Correct answer was ${res}`);
+        console.log(`'${answer}'  is wrong answer ;(. Correct answer was ${res}\nLet's try again, ${theName}`);
       }
       return;
     }
