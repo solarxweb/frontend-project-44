@@ -7,26 +7,37 @@ const brainCalc = () => {
     const num1 = getInt();
     const num2 = getInt();
     const operator = getOperator();
+    let expression;
+    let res;
     console.log(`Question: ${num1} ${operator} ${num2}`);
     const answer = readlineSync.question('Your answer: ');
-    if ((operator === '+' && Number(answer) === num1 + num2) || (operator === '-' && Number(answer) === num1 - num2) || (operator === '*' && Number(answer) === num1 * num2)) {
-      console.log('Correct!');
-    } else {
-      let res;
-      if (operator === '+') {
-        res = num1 + num2;
-        console.log(`'${answer}'  is wrong answer ;(. Correct answer was '${res}'.\nLet's try again, ${theName}!`);
-      } if (operator === '-') {
-        res = num1 - num2;
-        console.log(`'${answer}'  is wrong answer ;(. Correct answer was '${res}'.\nLet's try again, ${theName}!`);
-      } if (operator === '*') {
-        res = num1 * num2;
-        console.log(`'${answer}'  is wrong answer ;(. Correct answer was '${res}'.\nLet's try again, ${theName}!`);
+    if (operator === '+') {
+      res = num1 + num2;
+      expression = Number(answer) === res;
+      if (expression) {
+        console.log('Correct!');
+      } else {
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${res}'.\nLet's try again, ${theName}!`);
       }
-      return;
+    } if (operator === '-') {
+      res = num1 - num2;
+      expression = Number(answer) === res;
+      if (expression) {
+        console.log('Correct!');
+      } else {
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${res}'.\nLet's try again, ${theName}!`);
+      }
+    } if (operator === '*') {
+      res = num1 * num2;
+      expression = Number(answer) === res;
+      if (expression) {
+        console.log('Correct!');
+      } else {
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${res}'.\nLet's try again, ${theName}!`);
+      }
     }
   }
-  console.log(`Congratulation, ${theName}!`);
+  return console.log(`Congratulation, ${theName}!`);
 };
 
 export default brainCalc;
