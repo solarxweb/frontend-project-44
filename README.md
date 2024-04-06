@@ -9,3 +9,6 @@
 
 #### ACIINEMA / Brain-calc lesson
 [![asciicast](https://asciinema.org/a/BZneuTbZBQAA4aY5gqcqxKsIC.svg)](https://asciinema.org/a/BZneuTbZBQAA4aY5gqcqxKsIC)
+
+#### ACIINEMA / Brain-gcd lesson 
+[![asciicast](https://asciinema.org/a/SJSoOrLV0qoK1KS0KE95aYtKB.svg)](https://asciinema.org/a/SJSoOrLV0qoK1KS0KE95aYtKB)
