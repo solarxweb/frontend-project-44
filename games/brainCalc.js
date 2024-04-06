@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getNameGreetings, getInt, getOperator } from '../src/index.js';
+import { getNameGreetings, getInt, getOperator, writeExercise, writeAnswer } from '../src/index.js';
 
 const brainCalc = () => {
   const theName = getNameGreetings();
@@ -9,8 +9,8 @@ const brainCalc = () => {
     const operator = getOperator();
     let expression;
     let res;
-    console.log(`Question: ${num1} ${operator} ${num2}`);
-    const answer = readlineSync.question('Your answer: ');
+    writeExercise(`${num1} ${operator} ${num2}`);
+    const answer = writeAnswer();
     if (operator === '+') {
       res = num1 + num2;
       expression = Number(answer) === res;
