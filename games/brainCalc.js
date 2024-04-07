@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import {
   getNameGreetings, getInt, getOperator,
   writeExercise, writeAnswer, writeQuestion,
