@@ -8,7 +8,7 @@
 [![asciicast](https://asciinema.org/a/v8zavtHurqhAdbvr8Ljxneoa7.svg)](https://asciinema.org/a/v8zavtHurqhAdbvr8Ljxneoa7)
 
 #### ACIINEMA / Brain-calc lesson
-[![asciicast](https://asciinema.org/a/BZneuTbZBQAA4aY5gqcqxKsIC.svg)](https://asciinema.org/a/BZneuTbZBQAA4aY5gqcqxKsIC)
+[![asciicast](https://asciinema.org/a/K2PfrmSd3eThcuunfa2zoBehe.svg)](https://asciinema.org/a/K2PfrmSd3eThcuunfa2zoBehe)
 
 #### ACIINEMA / Brain-gcd lesson 
-[![asciicast](https://asciinema.org/a/SJSoOrLV0qoK1KS0KE95aYtKB.svg)](https://asciinema.org/a/SJSoOrLV0qoK1KS0KE95aYtKB)
+[![asciicast](https://asciinema.org/a/C16V0PNPSPK8DWX8HeQd69deg.svg)](https://asciinema.org/a/C16V0PNPSPK8DWX8HeQd69deg)
