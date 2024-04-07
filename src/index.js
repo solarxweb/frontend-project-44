@@ -30,7 +30,6 @@ const writeAnswer = () => {
   return data;
 };
 
-
 const checkCorrect = (userAnswer, correctAnswer, notCorrectAnswer, name) => {
   if (userAnswer === correctAnswer) {
     console.log('Correct!');
@@ -38,9 +37,7 @@ const checkCorrect = (userAnswer, correctAnswer, notCorrectAnswer, name) => {
   }
   if (userAnswer === notCorrectAnswer) {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
-    return false;
   }
-  console.log(`'${userAnswer}' is wrong answer ;(.\nLet's try again, ${name}!`);
   return false;
 };
 
