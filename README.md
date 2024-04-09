@@ -7,8 +7,11 @@
 #### ASCIINEMA / Brain-even lesson 
 [![asciicast](https://asciinema.org/a/v8zavtHurqhAdbvr8Ljxneoa7.svg)](https://asciinema.org/a/v8zavtHurqhAdbvr8Ljxneoa7)
 
-#### ACIINEMA / Brain-calc lesson
+#### ASCIINEMA / Brain-calc lesson
 [![asciicast](https://asciinema.org/a/K2PfrmSd3eThcuunfa2zoBehe.svg)](https://asciinema.org/a/K2PfrmSd3eThcuunfa2zoBehe)
 
-#### ACIINEMA / Brain-gcd lesson 
+#### ASCIINEMA / Brain-gcd lesson 
 [![asciicast](https://asciinema.org/a/C16V0PNPSPK8DWX8HeQd69deg.svg)](https://asciinema.org/a/C16V0PNPSPK8DWX8HeQd69deg)
+
+#### ASCIINEMA / Brain-progression lesson
+[![asciicast](https://asciinema.org/a/abqydRc0KGYIaxKqi5UmYp6RM.svg)](https://asciinema.org/a/abqydRc0KGYIaxKqi5UmYp6RM)
