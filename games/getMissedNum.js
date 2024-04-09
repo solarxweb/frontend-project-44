@@ -5,7 +5,6 @@ import {
 
 let theName = '';
 let temp = 0;
-console.log(temp);
 
 const eachX = () => {
   const min = 2;
