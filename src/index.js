@@ -8,7 +8,7 @@ const getNameGreetings = () => {
 };
 
 const getInt = () => {
-  const randomNumber = Math.floor(Math.random() * 25 + 1);
+  const randomNumber = Math.floor(Math.random() * 55 + 1);
   return randomNumber;
 };
 const getOperator = () => {
