@@ -1,4 +1,4 @@
-#!/bin/usr/env node
+#!/usr/bin/env node
 import getPrimeNumber from '../games/getPrimeNumber.js';
 
-console.log(getPrimeNumber());
+getPrimeNumber();
