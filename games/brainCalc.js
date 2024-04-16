@@ -32,7 +32,7 @@ const playRound = () => {
 
 const brainCalc = () => {
   theName = getNameGreetings();
-  writeExercise('What is the result of the expression');
+  writeExercise('What is the result of the expression?');
   playThreeTimes(theName, playRound);
 };
 
