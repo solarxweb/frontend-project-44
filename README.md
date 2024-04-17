@@ -12,12 +12,12 @@ If you are wanted to play some, you need to do these steps:
  - use 'make install' to install dependencies
  - use 'npm link' to install packages
  - write short command which will start the game
- -- project can work w/ these five short commands:
-	 brain-calc - Calculator.
-	 brain-even - Decide, which is number. Even or odd.
-	 brain-prime - Decide, which is number. Common or composite.
-	 brain-progression - Find number in sequence.
-	 brain-gcd - Find the greater common number.
+ project can work w/ these five short commands:
+brain-calc - Calculator.
+brain-even - Decide, which is number. Even or odd.
+brain-prime - Decide, which is number. Common or composite.
+brain-progression - Find number in sequence.
+brain-gcd - Find the greater common number.
 
 Below, in asciinemas, you can see how look each game.
 
