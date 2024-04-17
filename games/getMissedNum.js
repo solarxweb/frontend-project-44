@@ -43,7 +43,7 @@ const playRound = () => {
 
 const getMissedNum = () => {
   theName = getNameGreetings();
-  writeExercise('What the number is missing in the progression?');
+  writeExercise('What number is missing in the progression?');
   playThreeTimes(theName, playRound);
 };
 export default getMissedNum;
