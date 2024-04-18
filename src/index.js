@@ -1,4 +1,4 @@
-import readlineSync, { question } from 'readline-sync';
+import readlineSync from 'readline-sync';
 import getNameGreeting from './cli.js';
 
 const getInt = () => {

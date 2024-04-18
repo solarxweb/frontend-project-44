@@ -1,9 +1,6 @@
 import {
   getInt, doExecuteStart } from '../index.js';
 
-import getNameGreetings from '../cli.js';
-
-let theName = '';
 let temp = 0;
 
 const eachX = () => {
