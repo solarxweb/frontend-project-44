@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { getNameGreetings } from '../src/index.js';
+import getNameGreetings from '../src/cli.js';
 
 getNameGreetings();
