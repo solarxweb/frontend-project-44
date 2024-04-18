@@ -1,5 +1,4 @@
-import {
-  getInt, doExecuteStart } from '../index.js';
+import { getInt, doExecuteStart } from '../index.js';
 
 let temp = 0;
 
