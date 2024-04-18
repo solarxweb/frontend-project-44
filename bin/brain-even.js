@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getEvenNumber from '../games/getEvenNumber.js';
+import getEvenNumber from '../src/games/getEvenNumber.js';
 
 getEvenNumber();

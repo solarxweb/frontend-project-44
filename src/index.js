@@ -1,59 +1,35 @@
-import readlineSync from 'readline-sync';
-
-const getNameGreetings = () => {
-  console.log('Welcome to the Brain Games!');
-  const getName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${getName}!`);
-  return getName;
-};
+import readlineSync, { question } from 'readline-sync';
+import getNameGreeting from './cli.js';
 
 const getInt = () => {
   const randomNumber = Math.floor(Math.random() * 55 + 1);
   return randomNumber;
 };
+
 const getOperator = () => {
   const arr = ['+', '-', '*'];
   const randomSymb = Math.floor(Math.random() * arr.length);
   return arr[randomSymb];
 };
 
-const writeExercise = (text) => {
-  console.log(text);
-};
+const doExecuteStart = (exerciseDescription, checkCorrect) => {
+  const theName = getNameGreeting();
+  console.log(exerciseDescription);
 
-const writeQuestion = (data) => {
-  console.log('Question:', data);
-};
-
-const writeAnswer = () => {
-  const data = readlineSync.question('Your answer: ');
-  return data;
-};
-
-const checkCorrect = (userAnswer, correctAnswer, notCorrectAnswer, name) => {
-  if (userAnswer === correctAnswer) {
-    console.log('Correct!');
-    return true;
-  }
-  if (userAnswer === notCorrectAnswer) {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
-  }
-  return false;
-};
-
-const playThreeTimes = (name, playRound) => {
-  for (let i = 0; i <= 2; i += 1) {
-    const done = playRound();
-    if (!done) {
-      break;
+  for (let i = 0; i < 3; i += 1) {
+    const { exercise, answer } = checkCorrect();
+    console.log(`Question: ${exercise}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (userAnswer === answer) {
+      console.log('Correct!');
     }
-    if (i === 2) {
-      console.log(`Congratulations, ${name}!`);
+    if (userAnswer !== answer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${theName}!`);
+      return false;
     }
   }
+  console.log(`Congratulations, ${theName}!`);
+  return true;
 };
 
-export {
-  getInt, getOperator, writeExercise, writeQuestion,
-  writeAnswer, checkCorrect, getNameGreetings, playThreeTimes,
-};
+export { getInt, getOperator, doExecuteStart };

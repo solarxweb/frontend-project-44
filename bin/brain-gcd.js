@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getCommonDivisor from '../games/getCommonDivisor.js';
+import getCommonDivisor from '../src/games/getCommonDivisor.js';
 
 getCommonDivisor();

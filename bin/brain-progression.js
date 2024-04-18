@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getMissedNum from '../games/getMissedNum.js';
+import getMissedNum from '../src/games/getMissedNum.js';
 
 getMissedNum();
