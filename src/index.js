@@ -1,13 +1,9 @@
 import readlineSync from 'readline-sync';
 
 const doExecuteStart = (exerciseDescription, checkCorrect) => {
-  const getNameGreetings = () => {
-    console.log('Welcome to the Brain Games!');
-    const theName = readlineSync.question('May I have your name? ');
-    console.log(`Hello, ${theName}!`);
-    return theName;
-  };
-  const theName = getNameGreetings();
+  console.log('Welcome to the Brain Games!');
+  const theName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${theName}!`);
   console.log(exerciseDescription);
 
   for (let i = 0; i < 3; i += 1) {
