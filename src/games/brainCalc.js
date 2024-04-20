@@ -13,7 +13,6 @@ const solution = (num1, num2, operator) => {
 };
 
 const arr = ['+', '-', '*'];
-// const randomSymb = getInt(0, arr.length - 1);
 
 const checkCorrect = () => {
   const num1 = getInt(1, 25);
