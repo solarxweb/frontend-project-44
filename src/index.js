@@ -1,19 +1,13 @@
 import readlineSync from 'readline-sync';
-import getNameGreeting from './cli.js';
-
-const getInt = () => {
-  const randomNumber = Math.floor(Math.random() * 55 + 1);
-  return randomNumber;
-};
-
-const getOperator = () => {
-  const arr = ['+', '-', '*'];
-  const randomSymb = Math.floor(Math.random() * arr.length);
-  return arr[randomSymb];
-};
 
 const doExecuteStart = (exerciseDescription, checkCorrect) => {
-  const theName = getNameGreeting();
+  const getNameGreetings = () => {
+    console.log('Welcome to the Brain Games!');
+    const theName = readlineSync.question('May I have your name? ');
+    console.log(`Hello, ${theName}!`);
+    return theName;
+  };
+  const theName = getNameGreetings();
   console.log(exerciseDescription);
 
   for (let i = 0; i < 3; i += 1) {
@@ -22,14 +16,12 @@ const doExecuteStart = (exerciseDescription, checkCorrect) => {
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === answer) {
       console.log('Correct!');
-    }
-    if (userAnswer !== answer) {
+    } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${theName}!`);
-      return false;
+      return;
     }
   }
   console.log(`Congratulations, ${theName}!`);
-  return true;
 };
 
-export { getInt, getOperator, doExecuteStart };
+export default doExecuteStart;

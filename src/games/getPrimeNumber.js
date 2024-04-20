@@ -1,8 +1,5 @@
-import
-{
-  getInt,
-  doExecuteStart,
-} from '../index.js';
+import doExecuteStart from '../index.js';
+import getInt from '../utility.js';
 
 const isPrime = (number) => {
   if (number < 2) {
@@ -16,21 +13,20 @@ const isPrime = (number) => {
   return true;
 };
 
+const solution = (primeCheck) => (primeCheck === true ? 'yes' : 'no');
+
+const checkCorrect = () => {
+  const num = getInt(1, 55);
+  const primeCheck = isPrime(num);
+  const answer = solution(primeCheck);
+
+  return { exercise: num, answer };
+};
+
 const exerciseDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const getPrimeNumber = () => {
-  const checkCorrect = () => {
-    const num = getInt();
-    const primeCheck = isPrime(num);
-    let answer = '';
-    if (primeCheck === true) {
-      answer = 'yes';
-    } else {
-      answer = 'no';
-    }
-    const exercise = num;
-    return { exercise, answer };
-  };
+  checkCorrect();
   doExecuteStart(exerciseDescription, checkCorrect);
 };
 

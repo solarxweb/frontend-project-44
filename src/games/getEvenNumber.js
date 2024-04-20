@@ -1,18 +1,19 @@
-import {
-  getInt, doExecuteStart,
-} from '../index.js';
+import doExecuteStart from '../index.js';
+import getInt from '../utility.js';
 
 const solution = (num) => (num % 2 === 0 ? 'yes' : 'no');
 
 const exerciseDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
+const checkCorrect = () => {
+  const num = getInt(1, 50);
+  const exercise = num;
+  const answer = solution(exercise);
+  return { exercise, answer };
+};
+
 const getEvenNumber = () => {
-  const checkCorrect = () => {
-    const num = getInt();
-    const exercise = num;
-    const answer = solution(exercise);
-    return { exercise, answer };
-  };
+  checkCorrect();
   doExecuteStart(exerciseDescription, checkCorrect);
 };
 
