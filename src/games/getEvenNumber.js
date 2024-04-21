@@ -12,8 +12,8 @@ const getGameData = () => {
   return { exercise, answer };
 };
 
-const getEvenNumber = () => {
+const startBrainEven = () => {
   doExecuteStart(exerciseDescription, getGameData);
 };
 
-export default getEvenNumber;
+export default startBrainEven;
