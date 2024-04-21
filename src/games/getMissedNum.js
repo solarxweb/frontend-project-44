@@ -18,7 +18,7 @@ const solution = () => {
   return numsList.join(' ');
 };
 
-const checkCorrect = () => {
+const getGameData = () => {
   const exercise = solution();
   const answer = String(temp);
 
@@ -27,9 +27,8 @@ const checkCorrect = () => {
 
 const exerciseDescription = 'What number is missing in the progression?';
 
-const getMissedNum = () => {
-  checkCorrect();
-  doExecuteStart(exerciseDescription, checkCorrect);
+const startBrainProgression = () => {
+  doExecuteStart(exerciseDescription, getGameData);
 };
 
-export default getMissedNum;
+export default startBrainProgression;

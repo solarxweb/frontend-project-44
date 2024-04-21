@@ -15,7 +15,7 @@ const isPrime = (number) => {
 
 const solution = (primeCheck) => (primeCheck === true ? 'yes' : 'no');
 
-const checkCorrect = () => {
+const getGameData = () => {
   const num = getInt(1, 55);
   const primeCheck = isPrime(num);
   const answer = solution(primeCheck);
@@ -25,9 +25,8 @@ const checkCorrect = () => {
 
 const exerciseDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const getPrimeNumber = () => {
-  checkCorrect();
-  doExecuteStart(exerciseDescription, checkCorrect);
+const startBrainPrime = () => {
+  doExecuteStart(exerciseDescription, getGameData);
 };
 
-export default getPrimeNumber;
+export default startBrainPrime;

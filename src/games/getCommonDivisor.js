@@ -27,7 +27,7 @@ const solution = (first, second) => {
 
 const exerciseDescription = 'Find the greatest common divisor of given numbers.';
 
-const checkCorrect = () => {
+const getGameData = () => {
   const firstNum = getInt(1, 62);
   const secondNum = getInt(1, 62);
   const exercise = `${firstNum} ${secondNum}`;
@@ -36,9 +36,8 @@ const checkCorrect = () => {
   return { exercise, answer };
 };
 
-const getCommonDivisor = () => {
-  checkCorrect();
-  doExecuteStart(exerciseDescription, checkCorrect);
+const startGCD = () => {
+  doExecuteStart(exerciseDescription, getGameData);
 };
 
-export default getCommonDivisor;
+export default startGCD;
